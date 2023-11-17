@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { nanoid } from "@reduxjs/toolkit";
 
 const initialState = [
     
@@ -8,7 +7,6 @@ const initialState = [
                 name: "Border raduis",
                 value: 25,
                 type: "range",
-                slice: "boxProperties",
                 minMax: [0, 250]
             },
             {
@@ -16,7 +14,6 @@ const initialState = [
                 name: "Height",
                 value: 250,
                 type: "range",
-                slice: "boxProperties",
                 minMax: [0, 500]
             },
             {
@@ -24,14 +21,12 @@ const initialState = [
                 name: "Width",
                 value: 250,
                 type: "range",
-                slice: "boxProperties",
                 minMax: [0, 500]
             },
             {
                 inputNumber: 4,
                 name: "Background color",
                 value: "#fff",
-                slice: "boxProperties",
                 type: "color"
             },
         ]

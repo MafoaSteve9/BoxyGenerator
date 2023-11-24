@@ -9,6 +9,7 @@ import { useDispatch } from "react-redux"
 export default function Shadow({panelNumber, shadow}) {
   const dispatch = useDispatch()
   const [toggleShadow, setToggleShadow] = useState(false)
+  
  
   useEffect(() => {
     if(panelNumber === 1){

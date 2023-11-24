@@ -10,6 +10,11 @@ export default function Shadow({panelNumber, shadow}) {
   const dispatch = useDispatch()
   const [toggleShadow, setToggleShadow] = useState(false)
  
+  useEffect(() => {
+    if(panelNumber === 1){
+      setToggleShadow(true)
+    }
+  }, [])
 
   const shadowInputs = shadow.inputs.map((input, index) => {
     if(input.type === "range") {

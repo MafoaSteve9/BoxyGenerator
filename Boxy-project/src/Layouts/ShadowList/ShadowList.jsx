@@ -1,6 +1,6 @@
 import {useSelector, useDispatch} from "react-redux"
-import Shadow from "./Shadow"
 import {addShadow} from "../../features/shadows"
+import Shadow from "./Shadow"
 
 export default function ShadowList() {
   const shadows = useSelector(state => state.shadows)
